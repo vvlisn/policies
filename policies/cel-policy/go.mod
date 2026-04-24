@@ -1,6 +1,6 @@
 module github.com/kubewarden/policies/policies/cel-policy
 
-go 1.26.0
+go 1.26
 
 require (
 	github.com/google/cel-go v0.28.0

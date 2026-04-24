@@ -1,6 +1,6 @@
 module github.com/kubewarden/go-policy-template
 
-go 1.25
+go 1.26
 
 toolchain go1.26.2
 
