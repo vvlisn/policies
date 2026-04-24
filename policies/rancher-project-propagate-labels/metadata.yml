@@ -12,6 +12,8 @@ mutating: true
 contextAwareResources:
   - apiVersion: management.cattle.io/v3
     kind: Project
+hostCapabilities:
+  - kubernetes/get_resource
 executionMode: kubewarden-wapc
 annotations:
   # artifacthub specific

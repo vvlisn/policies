@@ -35,6 +35,8 @@ mutating: true
 contextAwareResources:
   - apiVersion: v1
     kind: Namespace
+hostCapabilities:
+  - kubernetes/get_resource
 executionMode: kubewarden-wapc
 annotations:
   # artifacthub specific

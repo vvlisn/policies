@@ -34,7 +34,8 @@ mutating: false
 contextAwareResources:
   - apiVersion: security.rancher.io/v1alpha1
     kind: WorkloadPolicy
-
+hostCapabilities:
+  - kubernetes/get_resource
 executionMode: kubewarden-wapc
 # Consider the policy for the background audit scans. Default is true. Note the
 # intrinsic limitations of the background audit feature on docs.kubewarden.io;

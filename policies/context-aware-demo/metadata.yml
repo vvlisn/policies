@@ -11,6 +11,9 @@ mutating: true
 contextAwareResources:
   - apiVersion: v1
     kind: Namespace
+hostCapabilities:
+  - kubernetes/get_resource
+  - kubernetes/list_resources_by_namespace
 backgroundAudit: false
 executionMode: kubewarden-wapc
 annotations:

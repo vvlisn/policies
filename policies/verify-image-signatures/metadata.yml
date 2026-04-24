@@ -17,6 +17,9 @@ rules:
     operations: ["CREATE", "UPDATE"]
 mutating: true
 contextAware: false
+hostCapabilities:
+  - crypto/v1/is_certificate_trusted
+  - oci/v2/verify
 executionMode: kubewarden-wapc
 annotations:
   # artifacthub specific

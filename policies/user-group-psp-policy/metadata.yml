@@ -41,6 +41,8 @@ rules:
       - UPDATE
 mutating: true
 contextAware: false
+hostCapabilities:
+  - oci/v1/oci_manifest_config
 executionMode: kubewarden-wapc
 annotations:
   # artifacthub specific
