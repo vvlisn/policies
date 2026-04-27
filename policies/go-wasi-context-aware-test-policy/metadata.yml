@@ -11,6 +11,10 @@ contextAwareResources:
     kind: Deployment
   - apiVersion: v1
     kind: Service
+hostCapabilities:
+  - kubernetes/get_resource
+  - kubernetes/list_resources_all
+  - kubernetes/list_resources_by_namespace
 executionMode: wasi
 # Consider the policy for the background audit scans. Default is true. Note the
 # intrinsic limitations of the background audit feature on docs.kubewarden.io;

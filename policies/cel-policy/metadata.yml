@@ -7,6 +7,17 @@ mutating: false
 contextAwareResources:
   - apiVersion: v1
     kind: Namespace
+hostCapabilities:
+  - crypto/v1/is_certificate_trusted
+  - kubernetes/get_resource
+  - kubernetes/list_resources_all
+  - kubernetes/list_resources_by_namespace
+  - net/v1/dns_lookup_host
+  - oci/v1/manifest_digest
+  - oci/v1/oci_manifest
+  - oci/v1/oci_manifest_config
+  - oci/v1/verify
+  - oci/v2/verify
 executionMode: wasi
 # Consider the policy for the background audit scans. Default is true. Note the
 # intrinsic limitations of the background audit feature on docs.kubewarden.io;

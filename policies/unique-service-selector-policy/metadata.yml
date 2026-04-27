@@ -7,6 +7,8 @@ mutating: false
 contextAwareResources:
   - apiVersion: "v1"
     kind: "Service"
+hostCapabilities:
+  - kubernetes/list_resources_by_namespace
 executionMode: kubewarden-wapc
 # Consider the policy for the background audit scans. Default is true. Note the
 # intrinsic limitations of the background audit feature on docs.kubewarden.io;
