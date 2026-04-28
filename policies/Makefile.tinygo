@@ -10,7 +10,7 @@ else
 		--rm \
 		-e GOFLAGS="-buildvcs=false" \
 		-v $(ROOT_DIR)/$(POLICY_DIR):/src \
-		-w /src tinygo/tinygo:0.39.0 \
+		-w /src tinygo/tinygo:0.41.1 \
 		tinygo build -o policy.wasm -target=wasi -no-debug .
 endif
 
