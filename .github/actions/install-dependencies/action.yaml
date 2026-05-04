@@ -14,8 +14,8 @@ runs:
         #!/bin/bash
         set -e
 
-        KWCTL_VERSION="v1.33.1"
-        KWCTL_CHECKSUM="b1f0b18a9f538bba7677f32832bfd964eceefca8cdf8e9e9ecaa5398655d2c49"
+        KWCTL_VERSION="v1.35.0"
+        KWCTL_CHECKSUM="2f518033989a897c2f502a2f4fa90b3ca666eee976a82d045abdea5022330341"
         ASSET="kwctl-linux-x86_64"
         INSTALL_DIR=$HOME/.kwctl
 
@@ -80,8 +80,8 @@ runs:
       shell: bash
       run: |
         set -e
-        TINYGO_VERSION="0.39.0"
-        TINYGO_CHECKSUM="775f15974e35059c8f3a141266bd9d293b5d556a3e44d5e6356c5602e9f386ab"
+        TINYGO_VERSION="0.41.1"
+        TINYGO_CHECKSUM="901fbccffc61adb111656d1f907dfc21b6c499ca841b115866a0d6de2d835fbe"
         TINYGO_DEB="tinygo_${TINYGO_VERSION}_amd64.deb"
         wget https://github.com/tinygo-org/tinygo/releases/download/v${TINYGO_VERSION}/${TINYGO_DEB}
         echo "${TINYGO_CHECKSUM}  ${TINYGO_DEB}" | sha256sum -c -

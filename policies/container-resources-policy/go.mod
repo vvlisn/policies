@@ -1,8 +1,8 @@
 module github.com/kubewarden/container-resources-policy
 
-go 1.25
+go 1.26
 
-toolchain go1.25.0
+toolchain go1.26.2
 
 require (
 	github.com/francoispqt/onelog v0.0.0-20190306043706-8c2bb31b10a4
