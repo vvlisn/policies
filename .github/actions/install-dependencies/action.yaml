@@ -14,8 +14,8 @@ runs:
         #!/bin/bash
         set -e
 
-        KWCTL_VERSION="v1.33.1"
-        KWCTL_CHECKSUM="b1f0b18a9f538bba7677f32832bfd964eceefca8cdf8e9e9ecaa5398655d2c49"
+        KWCTL_VERSION="v1.35.0"
+        KWCTL_CHECKSUM="2f518033989a897c2f502a2f4fa90b3ca666eee976a82d045abdea5022330341"
         ASSET="kwctl-linux-x86_64"
         INSTALL_DIR=$HOME/.kwctl
 
